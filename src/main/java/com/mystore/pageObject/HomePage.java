@@ -29,6 +29,13 @@ public class HomePage extends BaseClass {
 		
 	}
 	
+	public String getCurrentUrl() {
+		
+		String currentUrl = driver.getCurrentUrl();
+		return currentUrl;
+		
+	}
+	
 	public boolean validateMyWishist() {
 		
 		return  Action.isDisplayed(driver, myWishList);
